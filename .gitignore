@@ -1,9 +1,12 @@
+.idea
 /app/bootstrap.php.cache
 /app/cache/*
-/app/logs/*
 !app/cache/.gitkeep
+/app/config/parameters.yml
+/app/logs/*
 !app/logs/.gitkeep
-/build/
-/vendor/
+/app/phpunit.xml
 /bin/
 /composer.phar
+/vendor/
+/web/bundles/
