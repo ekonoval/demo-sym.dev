@@ -16,7 +16,7 @@ framework:
     # Supported values are 'textmate', 'macvim', 'emacs' and 'sublime' shortcuts
     # and any custom configuration string, such as: "phpstorm://open?file=%%f&line=%%l"
     # See http://symfony.com/doc/current/reference/configuration/framework.html#ide
-    ide: sublime
+    ide: "phpstorm://open?file=%%f&line=%%l"
 
     # esi:             ~
     translator:      { fallback: "%locale%" }

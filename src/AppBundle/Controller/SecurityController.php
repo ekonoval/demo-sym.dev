@@ -14,10 +14,11 @@ namespace AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 /**
  * Controller used to manage the application security.
- * See http://symfony.com/doc/current/cookbook/security/form_login_setup.html.
+ * See http://symfony.com/doc/current/cookbook/security/form_login_setup.html
  *
  * @author Ryan Weaver <weaverryan@gmail.com>
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
@@ -29,6 +30,7 @@ class SecurityController extends Controller
      */
     public function loginAction()
     {
+        /** @var AuthenticationUtils $helper */
         $helper = $this->get('security.authentication_utils');
 
         return $this->render('security/login.html.twig', array(
